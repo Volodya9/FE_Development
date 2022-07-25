@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  padding: 35px 20px 62px 25px;
+}
+header .hamburger {
+  width: 32px;
+  height: 32px;
+  left: 20px;
+  top: 39px;
+}
+header .btn-login {
+  padding: 10px 20px;
+  width: 91px;
+  height: 40px;
+}
+
+.btn {
+  background: #F84646;
+  border-radius: 8px;
+  border: none;
+  font-family: "Manrope";
+  color: #FFFFFF;
+}
+
+main .cover {
+  width: 100%;
+  height: 601px;
+  background-image: url("../images/cover.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 0;
+  padding-top: 137px;
+}
+main .intro {
+  height: 379.85px;
+  z-index: 99;
+  text-align: center;
+}
+main .intro h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 58px;
+  text-align: center;
+  color: #000000;
+}
+main .intro h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+main .intro .newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 43px;
+}
+main .intro input {
+  background: #FFFFFF;
+  margin-left: 20px;
+  outline: none;
+  border: none;
+}
+main .intro input ::-moz-placeholder {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.4);
+}
+main .intro input :-ms-input-placeholder {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.4);
+}
+main .intro input ::placeholder {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  color: rgba(0, 0, 0, 0.4);
+}
+main .intro .btn-intro {
+  padding: 16px 18px 15px 18px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+main .info {
+  padding: 60px 20px 0 20px;
+  text-align: center;
+}
+main .info h2 {
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+main .info-text {
+  padding-bottom: 20px;
+}
+main .info-text p {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+}
+main .circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+main .boxes {
+  margin-top: 40px;
+}
+main .boxes .box {
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+  padding: 0 30px;
+}
+main .boxes .box img {
+  margin-top: 10px;
+}
+main .boxes .box .circle1 {
+  background-color: #FF5391;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+main .boxes .box h2 {
+  margin-top: 19.5px;
+  margin-bottom: 10px;
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+}
+main .boxes .box h4 {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+main .boxes .box:nth-child(4) {
+  margin-bottom: 90px;
+}
+main .about {
+  width: 100%;
+  background-color: #F84646;
+  padding: 50px 20px 0 20px;
+  background-image: url("../images/about_cover.png");
+  background-size: cover;
+  background-position: top center;
+  mix-blend-mode: lighten;
+}
+main .about-title {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Manrope";
+  font-style: normal;
+  margin-bottom: 55px;
+}
+main .about-title h2 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 47px;
+}
+main .about-title p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+}
+main .about-box {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.59px;
+  padding-bottom: 44.5px;
+}
+main .about-box h4 {
+  margin: 0 auto;
+  padding-bottom: 44.5px;
+  width: 183px;
+}
+main .galery {
+  padding: 30px 20px 79px 20px;
+  text-align: center;
+  font-family: "Manrope";
+}
+main .galery-box {
+  padding-top: 60px;
+}
+main .galery-box h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41.5px;
+}
+main .galery-box p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28.5px;
+}
+main .galery-box .btn-galery {
+  padding: 12px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+main .clients {
+  padding: 40px 21px;
+  text-align: center;
+  font-family: "Manrope";
+  background-color: #F4F5F7;
+}
+main .clients h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41.5px;
+  margin-bottom: 14px;
+}
+main .clients p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+main .clients-box {
+  width: 170px;
+  height: 96px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+  border-radius: 16px;
+  margin: 0 auto;
+  margin-top: 24px;
+  text-align: center;
+  position: relative;
+}
+main .clients-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .contact {
+  padding: 94.5px 20px 82px 20px;
+  text-align: center;
+}
+main .contact-logo {
+  position: relative;
+}
+main .contact-logo .circle {
+  background-color: #F84646;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+}
+main .contact-info {
+  font-family: "Manrope";
+  margin-top: 46.5px;
+}
+main .contact-info h2 {
+  font-size: 36px;
+  line-height: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+main .contact-info p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+}
+main .contact-info .btn-contact {
+  padding: 11px 22.5px 11px 22.5px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+footer {
+  background-color: #F8464A;
+  padding: 80px 77.94px 77px 20px;
+  color: #FFFFFF;
+  font-family: "Inter";
+}
+footer h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+footer .link {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+footer .footer-logos {
+  display: flex;
+  flex-direction: row;
+  justify-items: left;
+}
+footer .footer-logos a {
+  margin-right: 23px;
+}/*# sourceMappingURL=style.css.map */

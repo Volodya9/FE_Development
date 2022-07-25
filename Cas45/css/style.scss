@@ -1,0 +1,398 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    padding: 35px 20px 62px 25px;
+
+    .hamburger{
+        width: 32px;
+        height: 32px;
+        left: 20px;
+        top: 39px;
+
+    }
+
+    .btn-login{        
+        padding: 10px 20px;
+        width: 91px;
+        height: 40px;        
+    }
+}
+
+.btn{
+    background: #F84646;            
+    border-radius: 8px;
+    border: none;
+    font-family: 'Manrope';
+    color: #FFFFFF;
+}
+
+main{
+    .cover{
+        width: 100%;
+        height: 601px;
+        background-image: url('../images/cover.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        z-index: 0;
+        padding-top: 137px;
+    }
+
+    .intro{
+        height: 379.85px;
+        //margin-top: 137px;
+        z-index: 99;
+        text-align: center;
+
+        h1{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 42px;
+            line-height: 58px;
+            text-align: center;
+            color: #000000;
+        }
+
+        h4{
+
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #000000;
+        }
+
+        .newsletter{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            margin-top: 43px;
+        }
+
+        input{
+
+            background: #FFFFFF;
+            margin-left: 20px;
+            outline: none;
+            border: none;
+
+            ::placeholder{
+
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 36px;
+                letter-spacing: 0.2px;
+                color: rgba(0, 0, 0, 0.4);
+            }
+        }
+        .btn-intro{
+           
+            padding: 16px 18px 15px 18px;            
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;            
+        }
+
+    }
+
+    .info{
+        padding: 60px 20px 0 20px;
+        text-align: center;
+
+        h2{
+            font-family: 'Manrope';
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 15px;
+        }
+
+        &-text{
+            padding-bottom: 20px;
+
+            p{
+                font-family: 'Manrope';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 22px;
+                letter-spacing: 0.2px;
+            }
+        }
+        
+    } 
+
+    .circle{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    .boxes{
+        margin-top: 40px;        
+
+        .box{
+            text-align: center;
+            position: relative;
+            margin-bottom: 80px;
+            padding: 0 30px;
+
+            img{
+                margin-top: 10px;
+            }
+
+            .circle1{
+                background-color: #FF5391;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                z-index: -1;
+            }
+
+            h2{
+                margin-top: 19.5px;
+                margin-bottom: 10px;
+                font-family: 'Manrope';
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 32px;                
+            }
+
+            h4{
+                font-family: 'Manrope';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;        
+                letter-spacing: 0.2px;
+            }
+        }
+
+        .box:nth-child(4){
+            margin-bottom: 90px;
+        }
+    }
+
+    .about{
+        width: 100%;
+        background-color: #F84646;
+        padding: 50px 20px 0 20px;
+        background-image: url('../images/about_cover.png');
+        background-size: cover;
+        background-position: top center;
+        mix-blend-mode: lighten;
+
+        &-title{
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Manrope';
+            font-style: normal;
+            margin-bottom: 55px;
+
+            h2{
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 47px;                
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 32px;
+            }
+        }
+
+        &-box{
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Manrope';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24.59px;
+            padding-bottom: 44.5px;
+
+            h4{
+                margin: 0 auto;
+                padding-bottom: 44.5px;
+                width: 183px;
+            }
+        }
+    }
+
+    .galery{
+        padding: 30px 20px 79px 20px;
+        text-align: center;
+        font-family: 'Manrope';
+
+        &-box{
+            padding-top: 60px;
+
+            h2{
+                margin-top: 30px;
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 41.5px;            
+            }
+    
+            p{
+                margin-bottom: 40px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 28.5px;            
+            }
+    
+            .btn-galery{
+                padding: 12px;
+                width: 100%;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                
+            }
+        }        
+    }
+
+    .clients{
+        padding: 40px 21px;
+        text-align: center;
+        font-family: 'Manrope';
+        background-color: #F4F5F7;
+
+        h2{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 41.5px;   
+            margin-bottom: 14px;         
+        }
+
+        p{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 32px;   
+            margin-bottom: 16px;     
+        }
+
+        &-box{
+            width: 170px;
+            height: 96px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+            border-radius: 16px;
+            margin: 0 auto;
+            margin-top: 24px;
+            text-align: center;
+            position: relative;
+
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .contact{
+        padding: 94.5px 20px 82px 20px;
+        text-align: center;
+
+        &-logo{
+            position: relative;
+
+            .circle{
+                background-color: #F84646;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                z-index: -1;
+            }
+        }
+
+        &-info{
+            font-family: 'Manrope';
+            margin-top: 46.5px;
+
+            h2{
+                font-size: 36px;
+                line-height: 32px;
+                font-weight: 800;
+                margin-bottom: 12px;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 25px;                
+            }
+
+            .btn-contact{
+                padding: 11px 22.5px 11px 22.5px;
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+        
+}
+
+footer{
+    background-color: #F8464A;
+    padding: 80px 77.94px 77px 20px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+
+    h4{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .link{
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .footer-logos{
+        display: flex;
+        flex-direction: row;
+        justify-items: left;
+
+        a{  
+            margin-right: 23px;
+        }
+    }
+}
+
+
+
